@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css" />
     <title>Pro?no</title>
+    <style>
+    body{
+        background-color: black;
+        overflow-x: hidden;
+    }
+    h1{
+        background: -webkit-linear-gradient(#fb4a4a, #935efd);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    </style>
 </head> 
 <body>
     <!-- Navbar -->
-    <div>
+    <div id="nav-bar">
+        <div style="display: flex; flex-direction: row; width: 100%; align-items: center;">
+            <img src="assets/ProfilePic.png" alt="profile_pic"/>
+            <h1>Pro?no</h1>
+        </div>
         <ul>
             <li><a href="#" target="_self">Home</a></li>
             <li><a href="#" target="_self">Genres</a></li>
@@ -16,67 +38,125 @@
             <li><a href="#" target="_self">Contact Me</a></li>
         </ul>
     </div>
-    <hr>
+    <div style="height: 2px; width: 100%; background: -webkit-linear-gradient(left, #fb4a4a, #935efd);"></div>
     <!-- Home -->
-    <div>
-        <h1>Welcome to Pranav's Music Expo</h1>
-        <h4>I love creating music as a hobby. I mostly do it when I'm free. The tools I use are soundcloud, open source tracks etc.</h4>
-    </div>
-    <hr>
+    <div class="home">
+        <div class="home-text">
+            <h1 style="font-weight: bolder;">Welcome to Pranav's Music Expo</h1>
+            <p>I love creating music as a hobby. I mostly do it when I'm free. The tools I use are soundcloud, open source tracks.</p>
+        </div>
+        <div class="home-img">
+            <img src="assets/musicSvg.svg" alt="..."/>
+        </div>
+        </div>
     <!-- Genres -->
-    <div>
+    <div class="genres">
         <h1>Genres</h1>
-        <ul>
-            <li>Pop</li>
-            <li>EDM</li>
-            <li>Rock</li>
-            <li>Indie</li>
-        </ul>
+        <div class="genre-cards">
+        <div class="genre-img-list">
+            <p>Pop</p>
+            <img alt="..." src="assets/pop.jpeg" style="height: 250px; width: 250px;"/>
+        </div>
+        <div class="genre-img-list">
+            <p>Edm</p>
+            <img alt="..." src="assets/edm.jpeg" style="height: 250px; width: 250px;"/>
+        </div>
+        <div class="genre-img-list">
+            <p>Indie</p>
+            <img alt="..." src="assets/indie.avif" style="height: 250px; width: 250px;"/>
+        </div>
+        <div class="genre-img-list">
+            <p>Rock</p>
+            <img alt="..." src="assets/rock.jpeg" style="height: 250px; width: 250px;"/>
+        </div>
+        </div>
+        </div>
     </div>
     <!-- My Music -->
-    <div>
+    <div class="my-music">
         <!-- Music card -->
-        <hr>
         <h1>My Music</h1>
-        <div>
-            <div>
-                <img alt="..." src="edm.jpeg" style="height: 250px; width: 250px;"/>
+        <div class="music">
+            <div class="music-card">
+                <h1>100% Music</h1>
+                <h5>Release date: <span style="font-style: italic; color: cyan;">30 Jun 2021</span></h5>
+                <p>Genre: <span style="font-style: italic; color:crimson;">EDM</span></p>
+                <a href="https://www.youtube.com/watch?v=KFOs0snFk8o" target="_blank">
+                    <img src="assets/youtube.png" alt="..." style="height: 50px; width: 50px;"/>
+                </a>
+                <div style="margin: 3px;">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/KFOs0snFk8o" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
-            <div>
-                <h3>Music 1</h3>
-                <h5>Release date: 21 March 2023</h5>
-                <p>Genre: EDM</p>
-            </div>
-        </div>
-        
-        <div>
-            <div>
-                <img alt="..." src="pop.jpeg" style="height: 250px; width: 250px;"/>
-            </div>
-            <div>
-                <h3>Music 2</h3>
-                <h5>Release date: 21 March 2023</h5>
-                <p>Genre: Pop</p>
-            </div>
-        </div>
 
-        <div>
-            <div>
-                <img alt="..." src="indie.avif" style="height: 250px; width: 250px;"/>
+            <div class="music-card">
+                <h1>100% Lofi</h1>
+                <h5>Release date: <span style="font-style: italic; color: cyan;">13 Jun 2021</span></h5>
+                <p>Genre: <span style="font-style: italic; color:chartreuse;">Pop</span></p>
+                <a href="https://www.youtube.com/watch?v=G7lyIBtOq9k" target="_blank">
+                    <img src="assets/youtube.png" alt="..." style="height: 50px; width: 50px;"/>
+                </a>
+                <div style="margin: 3px;">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/G7lyIBtOq9k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
-            <div>
-                <h3>Music 3</h3>
-                <h5>Release date: 21 March 2023</h5>
-                <p>Genre: Indie</p>
+ 
+            <div class="music-card">
+                <h1>100% Song</h1>
+                <h5>Release date: <span style="font-style: italic; color: cyan;">12 Jun 2021</span></h5>
+                <p>Genre: <span style="font-style: italic; color:darkgreen;">Indie</span></p>
+                <a href="https://www.youtube.com/watch?v=NzVCHhI3WMw" target="_blank">
+                    <img src="assets/youtube.png" alt="..." style="height: 50px; width: 50px;"/>
+                </a>
+                <div style="margin: 3px;">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/NzVCHhI3WMw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
-    <hr>
     <!-- Contact Me -->
-    <div>
+    <div class="contact">
         <h1>Contact Me</h1>
+        <div class="contact-form">
+            <form>
+                <div style="display: flex; flex-direction: row;">
+                <p style="margin: 5px;">Name:</p><input type="text" placeholder="Name" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <p style="margin: 5px;">Gender:</p>
+                    <input type="radio" name="gender" value="Male" id="male" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/><label for="male">Male</label>
+                    <input type="radio" name="gender" value="Male" id="female" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/><label for="male">Female</label>
+                    <input type="radio" name="gender" value="Male" id="other" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/><label for="male">Other</label>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <p style="margin: 5px;">Your preferred genre?:</p>
+                    <input type="checkbox" name="genre1" value="Pop" id="pop" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/><label for="male">Pop</label>
+                    <input type="checkbox" name="genre2" value="EDM" id="edm" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/><label for="male">EDM</label>
+                    <input type="checkbox" name="genre3" value="Indie" id="indie" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/><label for="male">Indie</label>
+                    <input type="checkbox" name="genre4" value="Rock" id="rock" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/><label for="male">Rock</label>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <label for="likes" style="margin: 5px;">Select the song you liked:</label>
+                    <select name="likes" id="likes" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"> 
+                        <option value="song1">100%Music</option>
+                        <option value="song2">100%LoFi</option>
+                        <option value="song3">100%Song</option>
+                    </select>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <label for="thoughts" style="margin: 5px;">Your thoughts on my music:</label>
+                    <textarea id="thoughts" name="thoughts" rows="5" cols="50" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;">Type here.</textarea>
+                </div>
+                <div style="display: flex; flex-direction: row; height: 50px; width: 50px; scale: 1.5;">
+                    <input type="submit" value="Log In" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/>
+                    <input type="submit" value="Sign Up" style="margin: 10px; color: white; background-color: transparent; border-style: solid; border-color: cyan; border-top: 0; border-left: 0; border-right: 0;"/>
+                </div>
+            </form>
+        </div>
+        <div class="contact-links">
         <p>LinkedIn: <a href="https://www.linkedin.com/in/pranav-salunkhe/" target="_blank">pranav-salunkhe</a></p>
         <p>About Me: <a href="https://pranavsalunkhe.vercel.app">Portfolio</a></p>
+        </div>
     </div>
 </body>
 </html>
